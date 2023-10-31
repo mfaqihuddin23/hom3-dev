@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "main": "tailwind.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tailwindcss build -i ./src/main.css -o ./assets/css/styles.css",
     "dev": "tailwindcss -i ./src/main.css -o ./assets/css/styles.css --watch"
   },

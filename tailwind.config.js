@@ -14,12 +14,14 @@ module.exports = {
         'second-txt':"#677487",
         'accent':"#AAAAAA",
         'grey':{
+          200:'#F0F4FD',
           300:'#D4DBEA',
         },
         'primary':{
           500:'#CFFF41',
         },
         'secondary':{
+          50:'#F9F9F9',
           800:'#252525',
         }
       }, 

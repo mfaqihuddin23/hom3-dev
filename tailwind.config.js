@@ -12,7 +12,7 @@ module.exports = {
       colors:{ 
         'prim-txt':"#252525",
         'second-txt':"#677487",
-        'accent':"#AAAAAA",
+        'accent':"#D9D9D9",
         'grey':{
           200:'#F0F4FD',
           300:'#D4DBEA',

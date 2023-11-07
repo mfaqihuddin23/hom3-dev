@@ -65,8 +65,29 @@
   body{
     @apply font-satoshi
   }
+  .container{
+    width: 95% !important;
+  }
   .swiper {
     width: auto;
     height: auto;
+  }
+  .swiper-btn-prev .active{
+    @apply block
+  }
+  .swiper-btn-next .active{
+    @apply block
+  }
+  .swiper-btn-prev .disabled{
+    @apply hidden
+  }
+  .swiper-btn-next .disabled{
+    @apply hidden
+  }
+  .swiper-button-disabled .active{
+    @apply hidden
+  }
+  .swiper-button-disabled .disabled{
+    @apply block
   }
 }

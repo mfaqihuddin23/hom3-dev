@@ -452,9 +452,37 @@ body {
   font-family: Satoshi;
 }
 
+.container{
+  width: 95% !important;
+}
+
 .swiper {
   width: auto;
   height: auto;
+}
+
+.swiper-btn-prev .active {
+  display: block;
+}
+
+.swiper-btn-next .active {
+  display: block;
+}
+
+.swiper-btn-prev .disabled {
+  display: none;
+}
+
+.swiper-btn-next .disabled {
+  display: none;
+}
+
+.swiper-button-disabled .active {
+  display: none;
+}
+
+.swiper-button-disabled .disabled {
+  display: block;
 }
 
 *, ::before, ::after {
@@ -626,6 +654,10 @@ body {
   margin-bottom: 1.25rem;
 }
 
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -640,10 +672,6 @@ body {
 
 .mt-4 {
   margin-top: 1rem;
-}
-
-.mb-6 {
-  margin-bottom: 1.5rem;
 }
 
 .flex {
@@ -1288,6 +1316,10 @@ body {
     margin-bottom: 1.25rem;
   }
 
+  .lg\:mb-\[29px\] {
+    margin-bottom: 29px;
+  }
+
   .lg\:mb-\[49px\] {
     margin-bottom: 49px;
   }
@@ -1296,8 +1328,8 @@ body {
     margin-bottom: 52px;
   }
 
-  .lg\:mb-\[29px\] {
-    margin-bottom: 29px;
+  .lg\:block {
+    display: block;
   }
 
   .lg\:flex {

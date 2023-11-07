@@ -453,8 +453,8 @@ body {
 }
 
 .swiper {
-  width: 600px;
-  height: 300px;
+  width: auto;
+  height: auto;
 }
 
 *, ::before, ::after {
@@ -642,6 +642,10 @@ body {
   margin-top: 1rem;
 }
 
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -658,6 +662,10 @@ body {
   height: 2.5rem;
 }
 
+.h-12 {
+  height: 3rem;
+}
+
 .h-5 {
   height: 1.25rem;
 }
@@ -672,6 +680,10 @@ body {
 
 .w-10 {
   width: 2.5rem;
+}
+
+.w-12 {
+  width: 3rem;
 }
 
 .w-5 {
@@ -701,6 +713,10 @@ body {
 
 .max-w-\[300px\] {
   max-width: 300px;
+}
+
+.max-w-\[412px\] {
+  max-width: 412px;
 }
 
 .max-w-\[548px\] {
@@ -783,6 +799,10 @@ body {
   gap: 1rem;
 }
 
+.gap-5 {
+  gap: 1.25rem;
+}
+
 .gap-6 {
   gap: 1.5rem;
 }
@@ -817,6 +837,10 @@ body {
 
 .rounded-\[40px\] {
   border-radius: 40px;
+}
+
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .rounded-lg {
@@ -898,8 +922,16 @@ body {
   padding: 0.5rem;
 }
 
+.p-3 {
+  padding: 0.75rem;
+}
+
 .p-4 {
   padding: 1rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .px-1 {
@@ -1042,6 +1074,11 @@ body {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .text-xs {
@@ -1259,6 +1296,10 @@ body {
     margin-bottom: 52px;
   }
 
+  .lg\:mb-\[29px\] {
+    margin-bottom: 29px;
+  }
+
   .lg\:flex {
     display: flex;
   }
@@ -1307,12 +1348,20 @@ body {
     gap: 13px;
   }
 
+  .lg\:rounded-\[32px\] {
+    border-radius: 32px;
+  }
+
   .lg\:rounded-\[40px\] {
     border-radius: 40px;
   }
 
   .lg\:p-6 {
     padding: 1.5rem;
+  }
+
+  .lg\:p-8 {
+    padding: 2rem;
   }
 
   .lg\:px-3 {

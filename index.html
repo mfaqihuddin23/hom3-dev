@@ -106,37 +106,286 @@
           <div class=""><img src="assets/images/svg/icon_arrow-tr.svg" alt=""></div>
         </a>
       </div>
-      <div class="step-box">
-        <div class="gap-6 flex justify-between">
-          <div class="flex flex-col w-full max-w-[569px]">
-            <div class="number-wrap flex justify-between">
-              <div class="p-[7.38px] bg-primary-100 rounded-[36.92px] justify-center items-center flex">
+      <div class="step-box flex flex-col lg:block gap-16 lg:gap-0">
+        <div class="lg:gap-[50px] flex justify-between ">
+          <div class="flex flex-col w-full max-w-[569px] pb-0 lg:pb-[50px]">
+            <div class="number-wrap flex justify-between lg:justify-end mb-3 lg:mb-12">
+              <div class="p-[7.38px] bg-primary-100 rounded-[36.92px] justify-center items-center flex lg:hidden">
                 <div class="w-[33px] h-[33px] bg-primary-500 rounded-full justify-center items-center flex">
                   <div class="text-prim-txt text-sm font-medium leading-[140%]">1</div>
                 </div>
               </div>
-              <div class=" p-1 bg-secondary-800 ronded-[35] lg:rounded-[40px] justify-center items-center gap-2 flex">
-                <div class="w-10 h-10 px-[9px] bg-white rounded-[40px] justify-center items-center gap-2 flex">
-                    <div class="w-4 h-4 justify-center items-center flex">
-                        <div class="w-4 h-4 relative">
-                        </div>
-                    </div>
+              <div class=" p-2 bg-secondary-800 rounded-[35px] lg:rounded-[40px] justify-center items-center gap-2 flex">
+                <div class="icon-wrap">
+                  <img src="assets/images/svg/icon-property.svg" alt="">
                 </div>
                 <div class="text-white text-sm lg:text-base font-medium leading-[140%] lg:leading-[150%]">Property selection</div>
               </div>
             </div>
-            
+            <div class="flex lg:hidden items-center mb-6">
+              <div class="max-w-[569px] p-6 lg:p-8 bg-secondary-50 rounded-[40px] flex">
+                <div class="self-stretch text-second-txt text-sm lg:text-base font-medium leading-[140%] lg:leading-[150%]">List of high yield real estate preselected properties are provided. We use our internal AI analytics system and third party vendor to invest only in the best of the best neighberhoods. Example: Dubai Hills, Palm Jamaiah, Arabian Ranches.<br/><br>Note: we can also tokenise property of your choice.</div>
+              </div>
+            </div>
+            <div class="prop-selection flex flex-col relative">
+              <div class="p-2.5 lg:p-[18px] bg-white rounded-xl shadow border border-hvr justify-center items-center flex max-w-[525px]">
+                <table class="w-full text-norm-txt">
+                  <thead class="text-subdued bg-grey-50 font-medium text-[10px]">
+                    <tr class="">
+                      <th scope="" class="py-2.5 pl-2.5 lg:py-1.5 lg:pl-3">
+                        <div class="flex items-center">
+                          <input disabled id="inline-disabled-checkbox" type="checkbox" class="">
+                          <label for="checkbox-all-search" class="sr-only">checkbox</label>
+                        </div>
+                      </th>
+                      <th scope="col" class="py-2.5 lg:py-1.5  text-start">
+                        Name
+                      </th>
+                      <th scope="col" class="py-2.5 lg:py-1.5 text-start">
+                        Location
+                      </th>
+                      <th scope="col" class="py-2.5 pr-2.5 lg:py-1.5 lg:pr-3 text-start">
+                        Price
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="bg-white">
+                      <td class="py-1 pl-1.5 lg:py-2 lg:pl-3">
+                        <div class="flex items-center">
+                          <input disabled id="inline-disabled-checkbox" type="checkbox" class="">
+                          <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                        </div>
+                      </td>
+                      <th scope="row" class="flex justify-start py-1 lg:py-2">
+                        <div class=" justify-start items-center gap-[5.82px] flex">
+                          <img class="max-w-[22px] lg:max-w-[40px] rounded-lg" src="assets/images/img-dubai-hill.png" />
+                          <div class="text-[6.5px] lg:text-xs font-medium leading-[125%] tracking-tight">Dubai Hills </div>
+                        </div>
+                      </th>
+                      <td class="text-start py-1 lg:py-2">
+                        <div class="text-[5px] lg:text-[8.73px] font-medium leading-[120%]">My Street, Kingston, New York, USA</div>
+                      </td>
+                      <td class="text-start py-1 pr-1.5 lg:py-2 lg:pr-3">
+                        <div class="px-1 lg:px-2 py-0.5 lg:py-1 bg-blue-50 rounded flex-col justify-start items-center inline-flex">
+                          <div class="text-[5px] lg:text-[8.73px] font-medium leading-[120%]">59 ETH</div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="bg-white">
+                      <td class="py-1 pl-1.5 lg:py-2 lg:pl-3">
+                        <div class="flex items-center">
+                          <input disabled id="inline-disabled-checkbox" type="checkbox" class="">
+                          <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                        </div>
+                      </td>
+                      <th scope="row" class="flex justify-start py-1 lg:py-2">
+                        <div class=" justify-start items-center gap-[5.82px] flex">
+                          <img class="max-w-[22px] lg:max-w-[40px] rounded-lg" src="assets/images/img-dubai-hill.png" />
+                          <div class="text-[6.5px] lg:text-xs font-medium leading-[125%] tracking-tight">Dubai Hills </div>
+                        </div>
+                      </th>
+                      <td class="text-start py-1 lg:py-2">
+                        <div class="text-[5px] lg:text-[8.73px] font-medium leading-[120%]">My Street, Kingston, New York, USA</div>
+                      </td>
+                      <td class="text-start py-1 pr-1.5 lg:py-2 lg:pr-3">
+                        <div class="px-1 lg:px-2 py-0.5 lg:py-1 bg-blue-50 rounded flex-col justify-start items-center inline-flex">
+                          <div class="text-[5px] lg:text-[8.73px] font-medium leading-[120%]">59 ETH</div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="bg-white">
+                      <td class="py-1 pl-1.5 lg:py-2 lg:pl-3">
+                        <div class="flex items-center">
+                          <input disabled id="inline-disabled-checkbox" type="checkbox" class="">
+                          <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                        </div>
+                      </td>
+                      <th scope="row" class="flex justify-start py-1 lg:py-2">
+                        <div class=" justify-start items-center gap-[5.82px] flex">
+                          <img class="max-w-[22px] lg:max-w-[40px] rounded-lg" src="assets/images/img-dubai-hill.png" />
+                          <div class="text-[6.5px] lg:text-xs font-medium leading-[125%] tracking-tight">Dubai Hills </div>
+                        </div>
+                      </th>
+                      <td class="text-start py-1 lg:py-2">
+                        <div class="text-[5px] lg:text-[8.73px] font-medium leading-[120%]">My Street, Kingston, New York, USA</div>
+                      </td>
+                      <td class="text-start py-1 pr-1.5 lg:py-2 lg:pr-3">
+                        <div class="px-1 lg:px-2 py-0.5 lg:py-1 bg-blue-50 rounded flex-col justify-start items-center inline-flex">
+                          <div class="text-[5px] lg:text-[8.73px] font-medium leading-[120%]">59 ETH</div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="p-[13.63px] bg-white rounded-[9.09px] shadow border border-hvr flex-col justify-center items-center gap-[18.17px] inline-flex max-w-[177px] self-end -mt-[80px]">
+                <div class="p-[13.63px] rounded border border-dashed border-hvr justify-center items-center gap-[5.68px] inline-flex">
+                  <div class="grow shrink basis-0 flex-col items-center flex">
+                    <div class="icon-wrap">
+                      <img src="assets/images/svg/icon-home.svg" alt="">
+                    </div>
+                    <div class="text-norm-txt text-[5px] lg:text-[9px] font-medium leading-[160%] mt-2 lg:mt-3.5 mb-[5px] lg:mb-[9px]">Search your dream home</div>
+                    <div class="px-1.5 lg:px-2.5 py-1 lg:py-[7px] bg-stabilo rounded-[2px] lg:rounded-[3px] border border-grey-900 justify-center items-center flex">
+                      <div class="text-grey-900 text-[4px] lg:text-[6px] font-semibold leading-[120%]">Search Now</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="flex flex-col">
+          <div class="hidden lg:flex flex-col items-center">
             <div class="p-2 bg-primary-100 rounded-[40px] justify-center items-center flex">
               <div class="w-9 h-9 bg-primary-500 rounded-full justify-center items-center flex">
                 <div class="text-prim-txt text-base font-medium leading-[150%]">1</div>
               </div>
             </div>
+            <div class="border border-dashed h-full"></div>
           </div>
-          <div class="flex items-center">
+          <div class="hidden lg:flex items-center">
             <div class="max-w-[569px] p-6 lg:p-8 bg-secondary-50 rounded-[40px] flex">
-              <div class="self-stretch text-slate-500 text-base font-medium leading-normal">List of high yield real estate preselected properties are provided. We use our internal AI analytics system and third party vendor to invest only in the best of the best neighberhoods. Example: Dubai Hills, Palm Jamaiah, Arabian Ranches.<br/><br>Note: we can also tokenise property of your choice.</div>
+              <div class="self-stretch text-second-txt text-sm lg:text-base font-medium leading-[140%] lg:leading-[150%]">List of high yield real estate preselected properties are provided. We use our internal AI analytics system and third party vendor to invest only in the best of the best neighberhoods. Example: Dubai Hills, Palm Jamaiah, Arabian Ranches.<br/><br>Note: we can also tokenise property of your choice.</div>
+            </div>
+          </div>
+        </div>
+        <div class="lg:gap-[50px] flex justify-between ">
+          <div class="flex flex-col w-full max-w-[569px] pb-0 lg:pb-[50px]">
+            <div class="number-wrap flex justify-between lg:justify-end mb-3 lg:mb-12">
+              <div class="p-[7.38px] bg-primary-100 rounded-[36.92px] justify-center items-center flex lg:hidden">
+                <div class="w-[33px] h-[33px] bg-primary-500 rounded-full justify-center items-center flex">
+                  <div class="text-prim-txt text-sm font-medium leading-[140%]">1</div>
+                </div>
+              </div>
+              <div class=" p-2 bg-secondary-800 rounded-[35px] lg:rounded-[40px] justify-center items-center gap-2 flex">
+                <div class="icon-wrap">
+                  <img src="assets/images/svg/icon-property.svg" alt="">
+                </div>
+                <div class="text-white text-sm lg:text-base font-medium leading-[140%] lg:leading-[150%]">Property selection</div>
+              </div>
+            </div>
+            <div class="flex lg:hidden items-center mb-6">
+              <div class="max-w-[569px] p-6 lg:p-8 bg-secondary-50 rounded-[40px] flex">
+                <div class="self-stretch text-second-txt text-sm lg:text-base font-medium leading-[140%] lg:leading-[150%]">List of high yield real estate preselected properties are provided. We use our internal AI analytics system and third party vendor to invest only in the best of the best neighberhoods. Example: Dubai Hills, Palm Jamaiah, Arabian Ranches.<br/><br>Note: we can also tokenise property of your choice.</div>
+              </div>
+            </div>
+            <div class="prop-selection flex flex-col relative">
+              <div class="p-2.5 lg:p-[18px] bg-white rounded-xl shadow border border-hvr justify-center items-center flex max-w-[525px]">
+                <table class="w-full text-norm-txt">
+                  <thead class="text-subdued bg-grey-50 font-medium text-[10px]">
+                    <tr class="">
+                      <th scope="" class="py-2.5 pl-2.5 lg:py-1.5 lg:pl-3">
+                        <div class="flex items-center">
+                          <input disabled id="inline-disabled-checkbox" type="checkbox" class="">
+                          <label for="checkbox-all-search" class="sr-only">checkbox</label>
+                        </div>
+                      </th>
+                      <th scope="col" class="py-2.5 lg:py-1.5  text-start">
+                        Name
+                      </th>
+                      <th scope="col" class="py-2.5 lg:py-1.5 text-start">
+                        Location
+                      </th>
+                      <th scope="col" class="py-2.5 pr-2.5 lg:py-1.5 lg:pr-3 text-start">
+                        Price
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="bg-white">
+                      <td class="py-1 pl-1.5 lg:py-2 lg:pl-3">
+                        <div class="flex items-center">
+                          <input disabled id="inline-disabled-checkbox" type="checkbox" class="">
+                          <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                        </div>
+                      </td>
+                      <th scope="row" class="flex justify-start py-1 lg:py-2">
+                        <div class=" justify-start items-center gap-[5.82px] flex">
+                          <img class="max-w-[22px] lg:max-w-[40px] rounded-lg" src="assets/images/img-dubai-hill.png" />
+                          <div class="text-[6.5px] lg:text-xs font-medium leading-[125%] tracking-tight">Dubai Hills </div>
+                        </div>
+                      </th>
+                      <td class="text-start py-1 lg:py-2">
+                        <div class="text-[5px] lg:text-[8.73px] font-medium leading-[120%]">My Street, Kingston, New York, USA</div>
+                      </td>
+                      <td class="text-start py-1 pr-1.5 lg:py-2 lg:pr-3">
+                        <div class="px-1 lg:px-2 py-0.5 lg:py-1 bg-blue-50 rounded flex-col justify-start items-center inline-flex">
+                          <div class="text-[5px] lg:text-[8.73px] font-medium leading-[120%]">59 ETH</div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="bg-white">
+                      <td class="py-1 pl-1.5 lg:py-2 lg:pl-3">
+                        <div class="flex items-center">
+                          <input disabled id="inline-disabled-checkbox" type="checkbox" class="">
+                          <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                        </div>
+                      </td>
+                      <th scope="row" class="flex justify-start py-1 lg:py-2">
+                        <div class=" justify-start items-center gap-[5.82px] flex">
+                          <img class="max-w-[22px] lg:max-w-[40px] rounded-lg" src="assets/images/img-dubai-hill.png" />
+                          <div class="text-[6.5px] lg:text-xs font-medium leading-[125%] tracking-tight">Dubai Hills </div>
+                        </div>
+                      </th>
+                      <td class="text-start py-1 lg:py-2">
+                        <div class="text-[5px] lg:text-[8.73px] font-medium leading-[120%]">My Street, Kingston, New York, USA</div>
+                      </td>
+                      <td class="text-start py-1 pr-1.5 lg:py-2 lg:pr-3">
+                        <div class="px-1 lg:px-2 py-0.5 lg:py-1 bg-blue-50 rounded flex-col justify-start items-center inline-flex">
+                          <div class="text-[5px] lg:text-[8.73px] font-medium leading-[120%]">59 ETH</div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="bg-white">
+                      <td class="py-1 pl-1.5 lg:py-2 lg:pl-3">
+                        <div class="flex items-center">
+                          <input disabled id="inline-disabled-checkbox" type="checkbox" class="">
+                          <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                        </div>
+                      </td>
+                      <th scope="row" class="flex justify-start py-1 lg:py-2">
+                        <div class=" justify-start items-center gap-[5.82px] flex">
+                          <img class="max-w-[22px] lg:max-w-[40px] rounded-lg" src="assets/images/img-dubai-hill.png" />
+                          <div class="text-[6.5px] lg:text-xs font-medium leading-[125%] tracking-tight">Dubai Hills </div>
+                        </div>
+                      </th>
+                      <td class="text-start py-1 lg:py-2">
+                        <div class="text-[5px] lg:text-[8.73px] font-medium leading-[120%]">My Street, Kingston, New York, USA</div>
+                      </td>
+                      <td class="text-start py-1 pr-1.5 lg:py-2 lg:pr-3">
+                        <div class="px-1 lg:px-2 py-0.5 lg:py-1 bg-blue-50 rounded flex-col justify-start items-center inline-flex">
+                          <div class="text-[5px] lg:text-[8.73px] font-medium leading-[120%]">59 ETH</div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="p-[13.63px] bg-white rounded-[9.09px] shadow border border-hvr flex-col justify-center items-center gap-[18.17px] inline-flex max-w-[177px] self-end -mt-[80px]">
+                <div class="p-[13.63px] rounded border border-dashed border-hvr justify-center items-center gap-[5.68px] inline-flex">
+                  <div class="grow shrink basis-0 flex-col items-center flex">
+                    <div class="icon-wrap">
+                      <img src="assets/images/svg/icon-home.svg" alt="">
+                    </div>
+                    <div class="text-norm-txt text-[5px] lg:text-[9px] font-medium leading-[160%] mt-2 lg:mt-3.5 mb-[5px] lg:mb-[9px]">Search your dream home</div>
+                    <div class="px-1.5 lg:px-2.5 py-1 lg:py-[7px] bg-stabilo rounded-[2px] lg:rounded-[3px] border border-grey-900 justify-center items-center flex">
+                      <div class="text-grey-900 text-[4px] lg:text-[6px] font-semibold leading-[120%]">Search Now</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hidden lg:flex flex-col items-center">
+            <div class="p-2 bg-primary-100 rounded-[40px] justify-center items-center flex">
+              <div class="w-9 h-9 bg-primary-500 rounded-full justify-center items-center flex">
+                <div class="text-prim-txt text-base font-medium leading-[150%]">1</div>
+              </div>
+            </div>
+            <div class="border border-dashed h-full"></div>
+          </div>
+          <div class="hidden lg:flex items-center">
+            <div class="max-w-[569px] p-6 lg:p-8 bg-secondary-50 rounded-[40px] flex">
+              <div class="self-stretch text-second-txt text-sm lg:text-base font-medium leading-[140%] lg:leading-[150%]">List of high yield real estate preselected properties are provided. We use our internal AI analytics system and third party vendor to invest only in the best of the best neighberhoods. Example: Dubai Hills, Palm Jamaiah, Arabian Ranches.<br/><br>Note: we can also tokenise property of your choice.</div>
             </div>
           </div>
         </div>

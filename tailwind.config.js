@@ -18,6 +18,7 @@ module.exports = {
           300:'#D4DBEA',
         },
         'primary':{
+          100:'#F2FFCC',
           500:'#CFFF41',
         },
         'secondary':{
